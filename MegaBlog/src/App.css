@@ -1,0 +1,12 @@
+.logo{
+    background-image: url(./assets/logo2.png);
+  height: 30px;
+  width: 160px;
+  background-repeat: no-repeat; 
+}
+.logo2{
+    background-image: url(./assets/Logo.jpg);
+  height: 30px;
+  width: 160px;
+  background-repeat: no-repeat; 
+}

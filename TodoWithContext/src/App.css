@@ -1,0 +1,8 @@
+.myclass{
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+@media (max-width:767px) {
+  .myclass{ width: 100%;}
+}

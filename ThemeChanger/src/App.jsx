@@ -24,7 +24,7 @@ useEffect(()=>{
 
   return (
   <ThemeProvider value={{themeMode ,darkTheme ,lightTheme}}>
-  <h1 className="p-4 bg-pink-600 text-3xl">Hello</h1>
+  <h1 className="p-4 bg-white-600 border border-gray-400 rounded-lg dark:bg-gray-800 dark:text-white text-3xl">Hello</h1>
   
 <div className="flex flex-wrap min-h-screen items-center">
                 <div className="w-full">
