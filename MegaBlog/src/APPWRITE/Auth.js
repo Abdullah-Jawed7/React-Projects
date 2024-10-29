@@ -19,7 +19,7 @@ export class AuthService {
         password,
         name
       );
-      if (user) {
+      if (userAccount) {
         // call another function to do automatic login
         return await this.login({ email, password });
       } else {

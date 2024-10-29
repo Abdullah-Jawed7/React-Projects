@@ -19,7 +19,7 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="w-full p-6 sm:w-1/2 lg:w-2/12">
+          <div className=" p-6 hidden sm:block sm:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercaset text-slate-300">
                 Company
@@ -60,7 +60,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full p-6 sm:w-1/2 lg:w-2/12">
+          <div className=" p-6  sm:block sm:w-1/2 lg:w-2/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-slate-300">
                 Support
@@ -69,7 +69,8 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium  text-gray-500 hover:text-slate-200"
-                    to="/"
+                    target='_blank'
+                    to="https://pk.linkedin.com/in/abdullah-muhammad-jawed-60b27a282?trk=public_post_feed-actor-name"
                   >
                     Account
                   </Link>
@@ -85,7 +86,8 @@ function Footer() {
                 <li className="mb-4">
                   <Link
                     className=" text-base font-medium  text-gray-500 hover:text-slate-200"
-                    to="/"
+                    target='_blank'
+                    to="https://pk.linkedin.com/in/abdullah-muhammad-jawed-60b27a282?trk=public_post_feed-actor-name"
                   >
                     Contact Us
                   </Link>
@@ -101,7 +103,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-          <div className="w-full p-6 sm:w-1/2 lg:w-3/12">
+          <div className=" p-6 hidden sm:block sm:w-1/2 lg:w-3/12">
             <div className="h-full">
               <h3 className="tracking-px mb-9  text-xs font-semibold uppercase text-slate-300">
                 Legals

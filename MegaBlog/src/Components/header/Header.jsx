@@ -33,11 +33,16 @@ function Header() {
     name:'Add Posts',
     slug:'/add-posts',
     active: authstatus
+ },
+ {
+    name:'My Posts',
+    slug:'/my-posts',
+    active: authstatus
  }
     ]
     return(<>
    
-   <header className="py-3 shadow bg-[#0d2436]">
+   <header className="py-3 shadow sticky top-0 z-10 bg-[#0d2436]">
       <Container>
          <nav className="flex justify-between">
             <div className="mr-4">
@@ -68,10 +73,10 @@ function Header() {
         </div>
             <ul className="hidden md:block md:flex ml-auto">
                {navItems.map((item)=> item.active ? (
-                  <li className="text-slate-300" key={item.name}>
+                  <li className=" text-slate-300 text-lg" key={item.name}>
                      <button onClick={()=> navigate(item.slug)}
-                     className="inline-block px-6 py-2 
-        duration-200 hover:bg-blue-100 rounded-full "
+                     className="hover:underline hover:text-slate-400 hover:font-semibold hover:px-4 underline-offset-2 inline-block px-6 py-2 
+        duration-200   "
                      >{item.name}</button>
 
                </li>):null)}
@@ -90,11 +95,11 @@ function Header() {
            {open && ( 
             <ul className="md:hidden  ml-auto">
                {navItems.map((item)=> item.active ? (
-                  <li className="block text-slate-300 p-2 "
+                  <li className="block text-slate-300 text-lg p-2 "
                    key={item.name}>
                      <button onClick={()=>( setOpen(!open), navigate(item.slug))}
                      className="inline-block px-6 py-2 
-        duration-200 hover:bg-blue-100 rounded-full "
+        duration-200 hover:underline hover:text-slate-400 hover:font-semibold hover:px-4 underline-offset-2 "
                      >{item.name}</button>
 
                </li>):null)}
@@ -103,7 +108,7 @@ function Header() {
                  <li>
                     <LogoutBtn/>
                  </li>
-                 <li>
+                 <li className="pt-2">
                     <ThemeBtn/>
                  </li>
                  </>

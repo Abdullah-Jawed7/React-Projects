@@ -1,9 +1,3 @@
-# Fundamental of React Router In Project 
-A project that help to understand fundamentals of React and React Router
-
-## Live Demo
-
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -16,7 +16,7 @@ export default function Home() {
         return(
             <div className="w-full py-8 mt-4 text-center">
                 <Container>
-                    <h1 className="text-3xl font-bold text-gray-800">No posts yet</h1>
+                    <h1 className="text-3xl font-bold text-gray-800"> Login to see Posts </h1>
                 </Container>
             </div>
         )

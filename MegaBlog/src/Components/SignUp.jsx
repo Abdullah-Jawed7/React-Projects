@@ -13,9 +13,11 @@ function SignUp() {
   const { register, handleSubmit } = useForm();
 
   const SignUp = async (data) => {
+    
+    
     setError("");
     try {
-      const userData = authService.createAccount(data);
+      const userData = await authService.createAccount(data);
       if (userData) {
         const userData = await authService.getCurrentUser();
         if (userData) dispatch(login(userData));
@@ -37,7 +39,7 @@ function SignUp() {
             className="inline-block w-full 
             max-w-[100px]"
           >
-            <Logo2 width="100%" />
+            <Logo2/>
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight

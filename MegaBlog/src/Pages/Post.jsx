@@ -30,13 +30,14 @@ export default function Post() {
   };
   let isAuthor = post && userData ? post.userId === userData.$id : false;
   
+  
 
   return post ? (
     <div className="py-8 overflow-clip max-h-[150vh]">
       <Container>
         <div className="w-2/3 text-center mx-auto">
         <div
-          className="w-[70%] mx-auto h-1/2  flex justify-center mb-4
+          className="w-full sm:w-[70%] mx-auto h-1/2  flex justify-center mb-4
              relative border rounded-xl md:p-2 post-pic"
            
         >
@@ -63,7 +64,7 @@ export default function Post() {
           <h1 className="text-lg md:text-2xl font-bold ">{post.title}</h1>
         </div>
         <div className="browser-css">{parse(post.content)}</div>
-        <div> {isAuthor && (
+         {isAuthor && (
             <div className="mt-4 md:hidden block">
               <Link to={`/edit-post/${post.$id}`}>
                 <Button text={'Edit'} bgColor="bg-[#0d2436]" color="text-slate-100" className="mr-3">
@@ -74,7 +75,7 @@ export default function Post() {
                 
               </Button>
             </div>
-          )}</div>
+          )}
           </div>
       </Container>
     </div>

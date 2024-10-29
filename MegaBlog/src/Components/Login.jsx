@@ -2,7 +2,7 @@
 import React ,{useState} from "react";
 import { Link ,useNavigate} from "react-router-dom";
 import { login as authLogin } from "../store/authSlice";
-import {Button ,Input , Logo,Logo2}from './index'
+import {Button ,Input ,Logo2}from './index'
 import { useDispatch } from "react-redux";
 
 // here react form start
